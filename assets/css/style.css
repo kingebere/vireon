@@ -71,7 +71,7 @@ overflow: hidden;
     content: "";
     display: block;
     width: 2px;
-    background-color: #3f3c3d;
+    
     position: fixed;
     right: 20px;
     top: 0;
