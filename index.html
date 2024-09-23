@@ -23,7 +23,9 @@
   font-family: circular;
 
   src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
-}</style></head>
+}</style>
+
+</head>
 
 <body class="yellow">
     <div class="wrapper">
@@ -188,25 +190,19 @@
             </div>
         </div>
     </div>
+ 
     <script>
-        const carousel = document.querySelector('.carousel');
-         const nextBtn = document.querySelector('.carousel-next');
-         const prevBtn = document.querySelector('.carousel-prev');
-       
-         const imageWidth = document.querySelector('.carousel img').clientWidth;
-       
-         nextBtn.addEventListener('click', function () {
-           console.log("jjj")
-           // Scroll the carousel forward by the width of one image
-           carousel.scrollBy({ left: imageWidth, behavior: 'smooth' });
-         });
-       
-         prevBtn.addEventListener('click', function () {
-           console.log("jjj")
-           // Scroll the carousel backward by the width of one image
-           carousel.scrollBy({ left: -imageWidth, behavior: 'smooth' });
-         });
-               </script>
+        $(document).ready(function(){
+          $('.carousel').slick({
+            prevArrow: $('.carousel-prev'),
+            nextArrow: $('.carousel-next'),
+            slidesToShow: 4, // Number of slides to show at once
+            slidesToScroll: 1, // Number of slides to scroll per action
+            infinite: true, // Enables infinite looping
+            // Add any additional Slick settings as needed
+          });
+        });
+      </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
@@ -226,17 +222,7 @@
       });
     </script> -->
 
-<!-- <script>
-    $(document).ready(function(){
-      $('.carousel').slick({
-        prevArrow: $('.carousel-prev'), // Custom previous button
-        nextArrow: $('.carousel-next'), // Custom next button
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      });
-    });
-  </script> -->
+  
   
 
 
