@@ -822,7 +822,9 @@ overflow: hidden;
     padding-top: 20px;
     width: 100%; /* Adjust the width as needed */
 }
-
+.carousel-container img {
+    border-radius: 18px;
+  }
 .owl-nav {
 padding-top:20px;
     width: 100%;
