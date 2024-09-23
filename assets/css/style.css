@@ -819,9 +819,41 @@ overflow: hidden;
 
 .carousel-container {
     position: relative;
+    padding-top: 20px;
     width: 100%; /* Adjust the width as needed */
 }
 
+.owl-nav {
+padding-top:20px;
+    width: 100%;
+    display: flex;
+    gap:20px;
+    pointer-events: none; /* Allows clicking through */
+}
+
+.owl-prev, .owl-next {
+    background-color: white; /* White circle background */
+    color: black; /* Black arrow color */
+    border-radius: 50%; /* Make it a circle */
+    padding: 20px; /* Increase padding to make the arrows larger */
+    font-size: 30px; /* Increase arrow size */
+    pointer-events: all; /* Enable clicking */
+    cursor: pointer; /* Show a pointer cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    background: white !important;
+    height: 24px !important;
+    width: 24px !important;
+    border: 1px solid black !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+
+.owl-prev:hover, .owl-next:hover {
+    background-color: #f0f0f0; /* Slightly change the background color on hover */
+}
 
 
 .carousel-prev, .carousel-next {

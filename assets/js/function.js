@@ -152,6 +152,31 @@ var App = {
     },
 
     initSlider: function () {
+        $(".owl-carousel").owlCarousel({
+            items: 1, // Show one image at a time
+            loop: true, // Enable looping
+            margin: 10, // Add space between items
+            nav: true, // Enable navigation
+            dots: true, // Enable dots for navigation
+            autoplay: true, // Enable autoplay
+            autoplayTimeout: 3000, // Set autoplay speed
+            autoplayHoverPause: true, // Pause autoplay on hover
+           responsive: {
+                0: {
+                    items: 2 // 1 item on small screens
+                },
+                600: {
+                    items: 3 // 2 items on medium screens
+                },
+                1000: {
+                    items: 4 // 3 items on large screens
+                }
+            }
+        });
+    
+        // Custom previous and next button behavior
+     
+
         if ($('.slider-offers').length) {
             var $slider = $('.slider-offers').slick({
                 slidesToShow: 1,
