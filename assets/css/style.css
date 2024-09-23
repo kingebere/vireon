@@ -37,11 +37,21 @@ strong {
     background-color: #ffffff;
     overflow:hidden;
 }
+.wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+overflow: hidden;
+}
 @media (max-width: 992px) {
  
-.yellow{
+.yellow,.wrapper{
     overflow: initial;
-}}
+}
+
+}
 
 .pink {
     background-color: #fec6d4;
@@ -55,14 +65,7 @@ strong {
     background-color: #eeeeee;
 }
 
-.wrapper {
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-}
 
 .wrapper:before {
     content: "";
