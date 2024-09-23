@@ -188,6 +188,25 @@
             </div>
         </div>
     </div>
+    <script>
+        const carousel = document.querySelector('.carousel');
+         const nextBtn = document.querySelector('.carousel-next');
+         const prevBtn = document.querySelector('.carousel-prev');
+       
+         const imageWidth = document.querySelector('.carousel img').clientWidth;
+       
+         nextBtn.addEventListener('click', function () {
+           console.log("jjj")
+           // Scroll the carousel forward by the width of one image
+           carousel.scrollBy({ left: imageWidth, behavior: 'smooth' });
+         });
+       
+         prevBtn.addEventListener('click', function () {
+           console.log("jjj")
+           // Scroll the carousel backward by the width of one image
+           carousel.scrollBy({ left: -imageWidth, behavior: 'smooth' });
+         });
+               </script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
@@ -219,7 +238,7 @@
     });
   </script> -->
   
-    
+
 
 
 </html>
