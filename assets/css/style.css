@@ -703,6 +703,13 @@ overflow: hidden;
     margin-top: 10px;
 }
 
+
+
+.logo-holder img {
+    max-width: 240px;
+}
+
+
 .section-about-us {
     position: relative; /* Make this element the reference for the absolutely positioned ::before */
     background: url(../images/about/bg-about.png) no-repeat top right; /* Background image */
