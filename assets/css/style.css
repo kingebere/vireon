@@ -816,7 +816,9 @@ overflow: hidden;
     overflow: hidden;
 }
 
-
+.mb-6{
+    margin-bottom: 24px;
+}
 .carousel-container {
     position: relative;
     padding-top: 20px;
