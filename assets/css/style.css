@@ -829,7 +829,7 @@ img {
     overflow: hidden;
 }
 .bg-main{
-    background-color: #FF944D;
+    background-color: rgb(237 237 237);
 }
 .mb-6{
     margin-bottom: 24px;
