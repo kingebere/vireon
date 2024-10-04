@@ -828,7 +828,9 @@ img {
     padding-top: 20px;
     overflow: hidden;
 }
-
+.bg-main{
+    background-color: rgb(255 222 173);
+}
 .mb-6{
     margin-bottom: 24px;
 }
