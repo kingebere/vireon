@@ -789,6 +789,9 @@ overflow: hidden;
 .app-platforms .app-link--2 {
     background: #000;
 }
+img {
+    border-style: none !important;
+}
 
 .app-platforms .app-link--2 img {
     margin-left: 11px;
