@@ -158,7 +158,9 @@ overflow: hidden;
 .btn-effect .right.right {
     right: 0;
 }
-
+.btn-new{
+    background:#10b7ef
+}
 .btn-effect .btn-bg {
     content: "";
     background: url(../images/icon-arrow-btn.svg) #10b7ef no-repeat right 27px center;
@@ -794,6 +796,7 @@ overflow: hidden;
 
 .app-platforms .app-link--3 {
     background: #fff;
+    border: 1px solid gray;
 }
 
 .app-platforms .app-link--3 img {

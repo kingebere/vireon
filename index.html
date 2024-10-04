@@ -1,122 +1,90 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VireonTV</title>
     <link rel="shortcut icon" href="assets/images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-<style type="text/css">
-@font-face {
-  font-weight: 400;
-  font-style:  normal;
-  font-family: circular;
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <style type="text/css">
+        @font-face {
+            font-weight: 400;
+            font-style: normal;
+            font-family: circular;
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
-}
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+        }
 
-@font-face {
-  font-weight: 700;
-  font-style:  normal;
-  font-family: circular;
+        @font-face {
+            font-weight: 700;
+            font-style: normal;
+            font-family: circular;
 
-  src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
-}</style>
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+        }
+    </style>
 
 </head>
 
-<body class="yellow">
-    <div class="wrapper">
-        <!-- <div class="lines">
-            <li class="active" data-id="about"></li>
-            <li data-id="partners" class=""></li>
-            <li data-id="offers"></li>
-            <li data-id="press"></li>
-            <li data-id="contacts"></li>
-        </div> -->
-        <header class="header">
-            <div class="wrap">
-                <img class="logo" src="assets/images/logo.png" alt="VireonTV">
-                <a href="#" class="btn btn-effect scroll-to-contact" data-id="contacts"><span class="btn-bg"></span>Contact us</a>
-                    <!-- <a href="/privacy" class="btn btn-effect scroll-to-contact" data-id="contacts"><span class="btn-bg"></span>Privacy policy</a> -->
-                <!-- <nav class="main-nav" id="nav">
-                    <ul>
-                        <li class="item item-1 active">
-                            <a href="javascript:void(0)" data-id="about">About</a>
-                        </li>
-                        <li class="item item-2">
-                            <a href="javascript:void(0)" data-id="partners">Partners</a>
-                        </li>
-                        <li class="item item-3">
-                            <a href="javascript:void(0)" data-id="offers">What we offer</a>
-                        </li>
-                        <li class="item item-4">
-                            <a href="javascript:void(0)" data-id="press">Press Highlights</a>
-                        </li>
-                        <li class="item item-5">
-                            <a href="javascript:void(0)" data-id="contacts">Contacts</a>
-                        </li>
-                    </ul>
-                </nav> -->
-                <!-- <div class="btn-menu"></div> -->
+<body>
+    <header class="border-b bg-white border-gray-200 shadow-sm fixed top-0 left-0 w-full z-50">
+        <nav class=" border-gray-200 dark:bg-gray-900 ">
+            <div class="max-w-[1400px] flex flex-wrap items-center justify-between mx-auto p-4 "><a
+                    href="https://vireon-tv.com" class="inline-flex items-centerrelative z-50"><img
+                        alt="Vireon Logo" loading="lazy" width="44" height="44" decoding="async" data-nimg="1"
+                        class="mr-1 h-12 sm:h-12 w-24 " style="color:transparent"
+                        src="/assets/images/logo.png"></a>
+                <div class="flex md:order-2 relative z-50"><a href="mailto:support@vireon-tv.com"><button type="button"
+                            class="text-white btn-new hover:btn-new focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Contact us</button></a></div>
             </div>
-        </header>
-        <main class="content content-bg">
-            <section class="section section-about-us" id="about" data-bg="yellow">
-                <div class="wrap">
-                    <div class="row">
-                        <div class="col col-1">
-                            <div class="logo-holder">
-                                <img src="assets/images/logo.png" alt="VireonTV">
-                            </div>
-                            <div class="btn-wrap mb-6">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
-                                    <defs>
-                                        <filter id="filter-goo-2">
-                                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
-                                            <feComposite in="SourceGraphic" in2="goo"></feComposite>
-                                        </filter>
-                                    </defs>
-                                </svg>
-                                <a href="mailto:support@vireon-tv.com" class="btn btn-effect scroll-to-contact" data-id="contacts">
-                                    Contact us<span class="btn-bg"></span>
-                                </a>
-                            </div>
-                                 <div class="btn-wrap">
-                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
-                                    <defs>
-                                        <filter id="filter-goo-2">
-                                            <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur"></feGaussianBlur>
-                                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
-                                            <feComposite in="SourceGraphic" in2="goo"></feComposite>
-                                        </filter>
-                                    </defs>
-                                </svg>
-                                <a href="/privacy" class="btn btn-effect scroll-to-contact" data-id="contacts">
-                                   Privacy <span class="btn-bg"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="">
-                            <h2 class="main-title">About Us</h2>
-                            <p class="text">
-                                Vireon is a free, ad-supported television service delivering a wide variety of content, accessible through dedicated channels—no subscription needed.
- 
-                             
-                         </p>
-                            <p class="text">
-                                With an extensive collection of live and on-demand content across multiple genres, Vireon combines sleek design with easy-to-use functionality. Viewers worldwide can effortlessly explore, save, and dive into their favorite shows, movies, and more.
-                                 
-                            </p>
-                            <p class="text">
-                                Perfect for those who want to jump into entertainment without the hassle of deciding, Vireon brings a world of diverse content straight to your screen—completely free!
+        </nav>
+    </header>
+    <main class="mt-16">
+        <div class="relative overflow-hidden ">
+            <!-- <div class="absolute bg-gradient-radial w-full h-[398px] ">
+                <img src="../assets/images/grid.svg" alt="grid">
+            </div> -->
+            <section class=" dark:bg-gray-900 ">
+                <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 relative ">
+                    <h1
+                        class="mb-4 text-4xl font-extrabold font-silka tracking-tight leading-tight text-instant-600 md:text-5xl lg:text-8xl px-5 dark:text-white">
+                       Watch Your Shows <br><span class="text-instant-text">Faster and Easier</span></h1>
+                    <p
+                        class="mb-8 text-lg  text-instant-textgrey font-silka font-medium  sm:px-16 xl:px-60 dark:text-gray-400">
+                        Vireon is a free, ad-supported television service delivering a wide variety of content, accessible through dedicated channels—no subscription needed.
+                        With an extensive collection of live and on-demand content across multiple genres, Vireon combines sleek design with easy-to-use functionality. Viewers worldwide can effortlessly explore, save, and dive into their favorite shows, movies, and more.   Perfect for those who want to jump into entertainment without the hassle of deciding, Vireon brings a world of diverse content straight to your screen—completely free!
                          
-                            </p>
+ <!-- --> </p>
+                    <div
+                        class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                      
+                     
+                      
+                        <a target="_blank"
+                            href="mailto:support@vireon-tv.com"
+                            class="btn-new hover:bg-primary-800 text-white focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex justify-center font-silka items-center py-3 px-5 text-base font-medium text-center  rounded-lg border border-gray-300 hover:bg-blue-700 focus:ring-4 focus:ring-gray-100 dark:text-white  dark:hover:bg-gray-700 dark:focus:ring-gray-800"><svg
+                                class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z">
+                                </path>
+                            </svg> Contact us</a><a
+                            class="inline-flex cursor-pointer font-silka justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg btn-new hover:btn-new focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                            href="/privacy">Privacy<svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor"
+                                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"></path>
+                            </svg></a></div>
                             <div class="app-block">
                                 <div class="app-platforms">
                                     <a class="app-link app-link--1" href="#" >
@@ -145,92 +113,39 @@
                                     </a>
                                 </div>
                             </div>
+                </div>
+            </section>
+
+
                         
                             
                         </div>
-                    </div>
-                </div>
-                <div class="wrap">
-                    <div class="carousel-container">
-                    <div class="owl-carousel">
-                        <div><img class="image-1" src="assets/images/image-1.png" alt="VireonTV"></div>
-                        <div><img class="image-2" src="assets/images/image-2.png" alt="VireonTV"></div>
-                        <div><img class="image-3" src="assets/images/image-3.png" alt="VireonTV"></div>
-                        <div><img class="image-4" src="assets/images/image-4.png" alt="VireonTV"></div>
-                        <div><img class="image-5" src="assets/images/image-5.png" alt="VireonTV"></div>
-                   
-                    </div>
-                
-                 
-                </div>  
-                </div>
-              
-            </section>
-           
-        </main>
-        <!-- <footer class="footer">
-            <div class="wrap">
-                <ul class="footer-nav">
-                    <li>
-                        <a href="terms.html" class="link">Terms of use</a>
-                    </li>
-                    <li>
-                        <a href="privacy.html" class="link">Privacy policy</a>
-                    </li>
-                    <li>
-                        <a href="cali-privacy.html" class="link">California Privacy Rights</a>
-                    </li>
-                    <li>
-                        <a href="personal-info.html" class="link">Do Not Sell My Personal <br> Information</a>
-                    </li>
-                </ul>
-                <p class="copyright">©2023 VireonTV. All rights reserved.</p>
-            </div>
-        </footer> -->
 
-        <div class="popup popup-cookie" style="display: block;">
-            <div class="popup-close"></div>
-            <div class="popup-content">
-                <p class="text">Like most websites VireonTV uses cookies in order to enhance your user experience</p>
-                <a href="/privacy" class="link">Learn more</a>
+
+            <div class="wrap">
+                <div class="carousel-container">
+                <div class="owl-carousel">
+                    <div><img class="image-1" src="assets/images/image-1.png" alt="VireonTV"></div>
+                    <div><img class="image-2" src="assets/images/image-2.png" alt="VireonTV"></div>
+                    <div><img class="image-3" src="assets/images/image-3.png" alt="VireonTV"></div>
+                    <div><img class="image-4" src="assets/images/image-4.png" alt="VireonTV"></div>
+                    <div><img class="image-5" src="assets/images/image-5.png" alt="VireonTV"></div>
+               
+                </div>
+            
+             
+            </div>  
             </div>
         </div>
-    </div>
- 
- 
+    </main>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/TweenMax.min.js"></script>
     <script src="assets/js/function.js"></script>
-    <!-- <script>
-        $(document).ready(function(){
-          $('.carousel').slick({
-            prevArrow: $('.carousel-prev'),
-            nextArrow: $('.carousel-next'),
-            slidesToShow: 4, // Number of slides to show at once
-            slidesToScroll: 1, // Number of slides to scroll per action
-            infinite: true, // Enables infinite looping
-            // Add any additional Slick settings as needed
-          });
-        });
-      </script> -->
-    <!-- Your animation script -->
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const images = document.querySelectorAll('.carousel img');
-    
-        // Animate all images using TweenMax with stagger effect
-        TweenMax.staggerTo(images, 1, {
-          opacity: 1,
-          x: 0, // Move back to 0 from 50px right
-          ease: Power2.easeOut
-        }, 0.3); // Delay between each image animation
-      });
-    </script> -->
+</body>
 
-  
-  
+
 
 
 
